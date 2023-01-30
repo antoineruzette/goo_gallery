@@ -8,8 +8,10 @@ Goo is a modeling environment for creating physics based simulations of biologic
 
 Goo is built on top of Blender. Blender is a truly amazing open source computer graphics project for generating animations. Goo provides a library of helper functions in Python for creating cells with user defined properties that are used inside the scripting environment and GUI of Blender. Physics and rendering are handled by Blender. In combination Goo and Blender allow cell-based simulations to be interacted with via Python scripts and through a GUI.
 
-Goo is open source and currently being developed by the Megason lab at Harvard University <a href="http://www.digitalfish.org//">http://www.digitalfish.org/</a>. We would love for you to contribute! Please contact me if you are interested. See contact page.
+Goo is open source and currently being developed by Sean Megason's group at Harvard University <a href="http://www.digitalfish.org//">http://www.digitalfish.org/</a>. 
 
 Our grand Driving Biological Problem is to simulate the first 24 hours of zebrafish development. Our initial efforts are focussed on cleavage stage. We hope that Goo will be useful for simulating other biological tissues for understanding morphogenesis, embryonic development, growth of organoids, tissue engineering, and artificial life.
 
-Contributors: Antoine Ruzette, KU Leuven and Harvard University; Sean Megason, Harvard University; Daniel Oo, Amherst University; Kali Konstantinopoulos, Indiana University; Michael Mitsch, Indiana University; Drew Willis, Indiana University; Ahmed Almaghasilah, University of Maine and Harvard University; Nenghan Lin, KU Leuven; Vanshika Bidhan, KU Leuven; Jiangli Gui, KU Leuven; Julie De Man, KU Leuven
+Contributors: Antoine Ruzette<sup>1,2</sup>, Sean Megason<sup>1</sup>, Kali Konstantinopoulos<sup>3</sup>, Michael Mitsch<sup>3</sup>, Drew Willis<sup>3</sup>, Daniel Oo<sup>4</sup>, Ahmed Almaghasilah<sup>1,5</sup>, Nenghan Lin<sup>2</sup>, Vanshika Bidhan<sup>2</sup>, Jiangli Gui<sup>2</sup>, Julie De Man<sup>2</sup>
+
+<sup>1</sup> Harvard University, <sup>2</sup> KU Leuven, <sup>3</sup> Indiana University, <sup>4</sup> Amhrest University, <sup>5</sup> University of Maine
