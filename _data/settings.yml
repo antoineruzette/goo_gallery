@@ -2,10 +2,10 @@ basic_settings:
   site_title: Goo
   site_owner: Antoine A. Ruzette
   site_tagline: The Blender library for simulating cells in 3D tissues
-  favicon_image: /images/favicon.ico
+  favicon_image: /images/logo/cellclumping.png
 
 header_settings:
-  logo_image: /images/logo/illustratedatom.svg
+  logo_image: /images/logo/cellclumping.png
   logo_width: 100
 
 menu_settings:
@@ -33,7 +33,6 @@ contact_settings:
 
 social_settings:
   facebook_url: ''
-  twitter_url: 'https://twitter.com/RuzAntoine'
   snapchat_url: ''
   youtube_url: 'https://www.youtube.com/@goo-thecellsimulationlibra7568/featured'
   google-plus_url: ''
