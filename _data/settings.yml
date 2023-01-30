@@ -1,6 +1,6 @@
 basic_settings:
-  site_title: Illustrated Atom
-  site_owner: David W. Kastner
+  site_title: Goo
+  site_owner: Antoine A. Ruzette
   site_tagline: Illustrated Atom
   favicon_image: /images/favicon.ico
 
@@ -16,6 +16,8 @@ menu_settings:
 #      url: '/blog/'
     - title: 'About'
       url: '/about'
+    - title: 'Documentation'
+      url: 'https://smegason.github.io/Goo/code.html'
     - title: 'Contact'
       url: '/contact'
 
