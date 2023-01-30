@@ -9,7 +9,7 @@ published: true
 
 ---
 
-<video style="width:100vh; height:100vh;" controls loop autoplay>
+<video style="width:50vh; height:50vh;" controls loop autoplay>
     <source src="/images/projects/blender/full_size/cellclumping.mp4" type="video/mp4">
 </video>
 
@@ -19,6 +19,6 @@ published: true
 
 **Software:** Blender v3.3.0
 
-**Type:** Simulation
+**Type:** Simulation, biological cells, adhesion forces
 
 **Render Engine:** 3D Viewport
