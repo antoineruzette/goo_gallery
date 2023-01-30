@@ -59,8 +59,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  email_url: 'sean_megason@hms.harvard.edu'
-
+  
 color_settings:
   background_color: '#ffffff'
   background_alt_color: '#F5F7FA'
