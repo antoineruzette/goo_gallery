@@ -1,7 +1,7 @@
 basic_settings:
   site_title: Goo
   site_owner: Antoine A. Ruzette
-  site_tagline: Illustrated Atom
+  site_tagline: The Blender library for simulating cells in 3D tissues
   favicon_image: /images/favicon.ico
 
 header_settings:
@@ -16,8 +16,8 @@ menu_settings:
 #      url: '/blog/'
     - title: 'About'
       url: '/about'
-#    - title: 'Documentation'
-#      url: 'https://smegason.github.io/Goo/code.html'
+    - title: 'Documentation'
+      url: 'https://smegason.github.io/Goo/code.html'
     - title: 'Contact'
       url: '/contact'
 
@@ -35,7 +35,7 @@ social_settings:
   facebook_url: ''
   twitter_url: 'https://twitter.com/RuzAntoine'
   snapchat_url: ''
-  youtube_url: ''
+  youtube_url: 'https://www.youtube.com/@goo-thecellsimulationlibra7568/featured'
   google-plus_url: ''
   vimeo_url: ''
   pinterest_url: ''
