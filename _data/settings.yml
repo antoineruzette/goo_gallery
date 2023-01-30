@@ -17,7 +17,7 @@ menu_settings:
     - title: 'About'
       url: '/about'
     - title: 'Documentation'
-      url: 'https://smegason.github.io/Goo/code.html'
+      url: '/documentation'
     - title: 'User Guide'
       url: 'https://smegason.github.io/Goo/userguide.html'
     - title: 'Developer Guide'
@@ -59,6 +59,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
+  email_url: 'sean_megason@hms.harvard.edu'
 
 color_settings:
   background_color: '#ffffff'
