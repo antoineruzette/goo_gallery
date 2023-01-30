@@ -7,6 +7,7 @@ basic_settings:
 header_settings:
   logo_image: /images/logo/cellclumping.png
   logo_width: 150
+  
 
 menu_settings:
   menu_items:
