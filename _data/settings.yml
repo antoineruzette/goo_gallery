@@ -12,8 +12,6 @@ menu_settings:
   menu_items:
     - title: 'Projects'
       url: '/'
-#    - title: 'Blog'
-#      url: '/blog/'
     - title: 'About'
       url: '/about'
     - title: 'Documentation'
@@ -59,7 +57,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  
+
 color_settings:
   background_color: '#ffffff'
   background_alt_color: '#F5F7FA'
