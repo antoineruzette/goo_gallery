@@ -1,2 +1,2 @@
-# illustratedatom
-Scientific illustration gallery
+# Goo
+Gallery for Goo. 
