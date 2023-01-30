@@ -1,8 +1,8 @@
 ---
-title: Goo
-subtitle: The Blender library for simulating biological cells in 3D tissues
-description: Scientific Illustration Project
-featured_image: /images/logo/goo_logo.jpg
+title: Goo, the Blender library for simulating biological cells in 3D tissues
+subtitle: ''
+description: ''
+featured_image: ''
 ---
 <b> Goo is a Python package for extending Blender for modeling biological cells, tissues, and embryos. </b>
 
