@@ -14,7 +14,7 @@ menu_settings:
     - title: 'Projects'
       url: '/'
     - title: 'About'
-      url: '/about'
+      url: '/about/'
     - title: 'Documentation'
       url: 'https://smegason.github.io/Goo/code.html'
     - title: 'Documentation'
@@ -24,7 +24,7 @@ menu_settings:
     - title: 'Developer Guide'
       url: 'https://smegason.github.io/Goo/devguide.html'
     - title: 'Contact'
-      url: '/contact'
+      url: '/contact/'
 
 grid_settings:
   overlay_opacity: 0.8
