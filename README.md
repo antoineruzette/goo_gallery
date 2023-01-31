@@ -1,2 +1,2 @@
-# illustratedatom
-Scientific illustration gallery
+# Goo
+The Blender library for simulating biological cells in 3D tissues. 
