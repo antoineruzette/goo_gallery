@@ -4,7 +4,7 @@ subtitle: '16 cells clumping under adhesion forces'
 icon: 'fas fa-play fa-3x'
 date: 2023-01-30 00:00:00
 description: Blender Render
-featured_image: '/images/projects/blender/featured/cellclumping.png'
+featured_image: '{{site.baseurl}}/images/projects/blender/featured/cellclumping.png'
 published: true
 
 ---
