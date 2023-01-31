@@ -1,4 +1,2 @@
-# Goo
-Gallery for Goo. 
-
-https://antoineruzette.github.io/goo_gallery/
+# illustratedatom
+Scientific illustration gallery

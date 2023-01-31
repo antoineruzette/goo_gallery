@@ -1,6 +1,5 @@
 site: Goo
-url: "https://antoineruzette.github.io/goo_gallery/"
-baseurl: "https://antoineruzette.github.io/goo_gallery/"
+url: "https://antoineruzette.github.io/goo_website/"
 version: 1.1.14
 
 collections:
