@@ -22,3 +22,5 @@ published: true
 **Type:** Simulation, 16 biological cells, adhesion forces
 
 **Render Engine:** 3D Viewport
+
+**Simulation parameters:** Enter table with parameters
