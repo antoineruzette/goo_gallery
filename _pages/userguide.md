@@ -20,12 +20,18 @@ featured_image: ''
 
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Create a cell: <br>
-<pre> <code>             
+<pre class="line-numbers">
+    <code class="language-python">             
                         from goo import goo <br>
                         goo.setup_world() <br>
                         cell = goo.Cell(name_string = &#x22;my first cell&#x22;, loc = (0, 0, 0)) <br>
                         goo.make_cell(cell) <br>
-</code> </pre>
+    </code> 
+</pre>
+
+
+
+
 3. Run your script by clicking the play button in the scripting tab of Blender
 4. Yay. You have created your first Goo cell in Blender. Next steps will elaborate on how to add adhesion forces and simulate its shape deformation over time. 
 
