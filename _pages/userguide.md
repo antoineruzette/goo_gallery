@@ -15,7 +15,6 @@ featured_image: ''
 
 [Insert screenshots]
 
-
 <b>Your first script</b>
 
 1. Open Blender and its <i>Scripting</i> tab. 
@@ -47,17 +46,17 @@ featured_image: ''
 3. Create your first scene by clicking the play button in the scripting tab of Blender. 
 4. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
 
-<b>Add another cell and cell adhesion and </b>
+<b>Add cell adhesion</b>
 
 The current scene is static as no interactions between cells have been declared. 
 1. 
 
+<b>Biological features supported by Goo</b>
 
 <b>Biological features supported by Goo</b>
 
 1. Biological cells
-2. Cell deformability
-3. Cell adhesion
-4. Cell growth 
-5. Cell random motility
-6. Cell division
+2. Cell adhesion
+3. Cell growth 
+4. Cell random motility
+5. Cell division
