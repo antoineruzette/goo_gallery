@@ -53,10 +53,13 @@ The current scene is static as no interactions between cells have been declared.
 
 <b>Biological features supported by Goo</b>
 
-<b>Biological features supported by Goo</b>
-
 1. Biological cells
+Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
 2. Cell adhesion
+Adhesion forces are mimmicked by Blender's built-in force fields. In Goo, they emanate from the cell's surface, are local and centered on the cell's center of mass. 
 3. Cell growth 
+Goo cells grow at a user-specified rate so that they volume isotropically increase. 
 4. Cell random motility
+Goo implements cell undirected motility as a uniform random walk. 
 5. Cell division
+Goo's model for cell division follows Hertwig's rule, stating that cells divide along their long axis. Therefore, the division plane is described as the plane orthogonal to the long axis and that passes by the cell's center of mass. 
