@@ -24,11 +24,11 @@ featured_image: ''
                     from goo import goo 
                     goo.setup_world() <br>
                     # create first collection
-                    goo.make_collection("my_first collection")
+                    goo.collection("my_cell_collection")
 
                     # colors 
-                    goo.add_material("green", 0, 0.1, 0)
-                    goo.add_material("red", 0.1, 0, 0)
+                    goo.material("green", 0, 0.1, 0)
+                    goo.material("red", 0.1, 0, 0)
     </code> 
 </pre>
 
@@ -36,9 +36,9 @@ featured_image: ''
 <pre>
     <code class="language-python">             
                     # create first cell
-                    goo.make_cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_first_collection")
+                    goo.cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_cell_collection")
                     # create second cell
-                    goo.make_cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_first_collection")
+                    goo.cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_cell_collection")
     </code> 
 </pre>
 
@@ -49,9 +49,20 @@ featured_image: ''
 <b>Add cell adhesion</b>
 
 The current scene is static as no interactions between cells have been declared. 
-1. 
+1. Declare your first adhesion forces. 
+<pre>
+    <code class="language-python">  
+                    # create first force collection
+                    goo.collection("my_force_collection")           
+                    # declare first force
+                    goo.adhesion("my_first_force", "my_first_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
+                    # declare second force
+                    goo.adhesion("my_second_force", "my_second_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
+    </code> 
+</pre>
+2. Execute the script in Blender's scripting tab then start the simulation. 
 
-<b>Biological features supported by Goo</b>
+<b>Biological features supported in Goo</b>
 
 1. Biological cells
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
