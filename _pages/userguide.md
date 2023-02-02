@@ -26,7 +26,6 @@ featured_image: ''
                         cell = goo.Cell(name_string = &#x22;my first cell&#x22;, loc = (0, 0, 0)) <br>
                         goo.make_cell(cell) <br>
 </code> </pre>
-
 3. Run your script by clicking the play button in the scripting tab of Blender
 4. Yay. You have created your first Goo cell in Blender. Next steps will elaborate on how to add adhesion forces and simulate its shape deformation over time. 
 
