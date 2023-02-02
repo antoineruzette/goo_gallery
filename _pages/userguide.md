@@ -1,6 +1,6 @@
 ---
 title: User's Guide
-subtitle: Create with first digital tissues in 3D with just a few clicks.
+subtitle: Goo allows you to create your first 3D digital tissues in just a few clicks.
 description: ''
 featured_image: ''
 ---
@@ -19,40 +19,38 @@ featured_image: ''
 <b>Your first script</b>
 
 1. Open Blender and its <i>Scripting</i> tab. 
-2. Create a cell collection and add your first cell to it: <br>
+2. Declare your first cell collection and colors for cell material:
 <pre>
     <code class="language-python">             
-                    from goo import goo <br>
+                    from goo import goo 
                     goo.setup_world() <br>
+                    # create first collection
+                    goo.make_collection("my_first collection")
 
-                    cell_collection = bpy.data.collections.new("my_first_collection")
-                    bpy.context.scene.collection.children.link(cell_collection)
-                    cell = goo.Cell(name_string = &#x22;my first cell&#x22;, loc = (0, 0, 0)) <br>
-                    goo.make_cell(cell) <br>
+                    # colors 
+                    goo.add_material("green", 0, 0.1, 0)
+                    goo.add_material("red", 0.1, 0, 0)
     </code> 
 </pre>
 
-
-
-
-3. Run your script by clicking the play button in the scripting tab of Blender
-4. Add a material that will be used to render your simulation. 
-<pre class="line-numbers">
+2. Declare your first cells: <br>
+<pre>
     <code class="language-python">             
-                    matg = bpy.data.materials.new("Green")
-                    matg.diffuse_color = (0,0.1,0,0.8)
-                    
-                    obj = bpy.context.active_object
-                    obj.active_material = matg
-                    bpy.ops.collection.objects_remove_all()
-                    bpy.data.collections['my_first_collection'].objects.link(obj)
+                    # create first cell
+                    goo.make_cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_first_collection")
+                    # create second cell
+                    goo.make_cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_first_collection")
     </code> 
 </pre>
-4. Yay. You have created your first Goo cell in Blender. Next steps will elaborate on how to add adhesion forces and simulate its shape deformation over time. 
 
-<b>Add cell adhesion and </b>
 
-1. Once your Blender scene
+3. Create your first scene by clicking the play button in the scripting tab of Blender. 
+4. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
+
+<b>Add another cell and cell adhesion and </b>
+
+The current scene is static as no interactions between cells have been declared. 
+1. 
 
 
 <b>Biological features supported by Goo</b>
