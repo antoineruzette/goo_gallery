@@ -21,12 +21,10 @@ featured_image: ''
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Create a cell: <br>
 <blockquote>
-<pre><code>
 from goo import goo
 goo.setup_world()
 cell = goo.Cell(name_string = &#x22;my first cell&#x22;, loc = (0, 0, 0))
 goo.make_cell(cell)
-</code></pre>
 </blockquote>
 
 3. Run your script by clicking the play button in the scripting tab of Blender
