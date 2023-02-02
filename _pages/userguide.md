@@ -19,13 +19,16 @@ featured_image: ''
 <b>Your first script</b>
 
 1. Open Blender and its <i>Scripting</i> tab. 
-2. Create a cell: <br>
-<pre class="line-numbers">
+2. Create a cell collection and add your first cell to it: <br>
+<pre>
     <code class="language-python">             
-                        from goo import goo <br>
-                        goo.setup_world() <br>
-                        cell = goo.Cell(name_string = &#x22;my first cell&#x22;, loc = (0, 0, 0)) <br>
-                        goo.make_cell(cell) <br>
+                    from goo import goo <br>
+                    goo.setup_world() <br>
+
+                    cell_collection = bpy.data.collections.new("my_first_collection")
+                    bpy.context.scene.collection.children.link(cell_collection)
+                    cell = goo.Cell(name_string = &#x22;my first cell&#x22;, loc = (0, 0, 0)) <br>
+                    goo.make_cell(cell) <br>
     </code> 
 </pre>
 
@@ -33,9 +36,23 @@ featured_image: ''
 
 
 3. Run your script by clicking the play button in the scripting tab of Blender
+4. Add a material that will be used to render your simulation. 
+<pre class="line-numbers">
+    <code class="language-python">             
+                    matg = bpy.data.materials.new("Green")
+                    matg.diffuse_color = (0,0.1,0,0.8)
+                    
+                    obj = bpy.context.active_object
+                    obj.active_material = matg
+                    bpy.ops.collection.objects_remove_all()
+                    bpy.data.collections['my_first_collection'].objects.link(obj)
+    </code> 
+</pre>
 4. Yay. You have created your first Goo cell in Blender. Next steps will elaborate on how to add adhesion forces and simulate its shape deformation over time. 
 
-<b>Simulate your digital cells</b>
+<b>Add cell adhesion and </b>
+
+1. Once your Blender scene
 
 
 <b>Biological features supported by Goo</b>
