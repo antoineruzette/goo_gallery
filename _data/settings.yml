@@ -17,7 +17,7 @@ menu_settings:
     - title: 'Documentation'
       url: 'https://smegason.github.io/Goo/code.html'
     - title: 'User Guide'
-      url: 'https://smegason.github.io/Goo/userguide.html'
+      url: '/userguide'
     - title: 'Developer Guide'
       url: 'https://smegason.github.io/Goo/devguide.html'
     - title: 'Contact'
