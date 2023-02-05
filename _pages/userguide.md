@@ -19,18 +19,16 @@ featured_image: ''
 
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Declare your first cell collection and colors for cell material:
-    <pre>
-        <code class="language-python">             
-            from goo import goo 
-            goo.setup_world() <br>
-            # create first collection
-            goo.collection("my_cell_collection")
+<blockquote-medium>           
+    from goo import goo 
+    goo.setup_world() <br>
+    # create first collection
+    goo.collection("my_cell_collection")
 
-            # colors 
-            goo.material("green", 0, 0.1, 0)
-            goo.material("red", 0.1, 0, 0)
-        </code> 
-    </pre>
+    # colors 
+    goo.material("green", 0, 0.1, 0)
+    goo.material("red", 0.1, 0, 0)
+</blockquote-medium>
 2. Declare your first cells: <br>
     <pre>
         <code class="language-python">             
