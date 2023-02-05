@@ -19,7 +19,7 @@ menu_settings:
     - title: 'User Guide'
       url: '/userguide'
     - title: 'Developer Guide'
-      url: 'https://smegason.github.io/Goo/devguide.html'
+      url: '/devguide'
     - title: 'Contact'
       url: '/contact'
 
