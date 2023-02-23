@@ -69,4 +69,3 @@ Goo cells grow at a user-specified rate so that they volume isotropically increa
 Goo implements cell undirected motility as a uniform random walk. 
 <h4>5. Cell division</h4> <br>
 Goo's model for cell division follows Hertwig's rule, stating that cells divide along their long axis. Therefore, the division plane is described as the plane orthogonal to the long axis and that passes by the cell's center of mass. 
->>>>>>> c5d254c95775683bb2991deeebc850157fa93ad8
