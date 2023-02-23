@@ -13,7 +13,7 @@ featured_image: ''
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 5. Re-start Blender. 
 
-[Insert screenshots]
+![images\demo\demo-landscape-2.jpg]
 
 <b>Your first script</b>
 
@@ -59,13 +59,13 @@ The current scene is static as no interactions between cells have been declared.
 
 <b>Biological features supported in Goo</b>
 
-1. Biological cells <br>
+<h4>1. Biological cells </h4> <br>
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
-2. Cell adhesion <br>
+<h4>2. Cell adhesion </h4><br>
 Adhesion forces are mimmicked by Blender's built-in force fields. In Goo, they emanate from the cell's surface, are local and centered on the cell's center of mass. 
-3. Cell growth <br>
+<h4>3. Cell growth </h4><br>
 Goo cells grow at a user-specified rate so that they volume isotropically increase. 
-4. Cell random motility <br>
+<h4>4. Cell random motility</h4> <br>
 Goo implements cell undirected motility as a uniform random walk. 
-5. Cell division <br>
+<h4>5. Cell division</h4> <br>
 Goo's model for cell division follows Hertwig's rule, stating that cells divide along their long axis. Therefore, the division plane is described as the plane orthogonal to the long axis and that passes by the cell's center of mass. 

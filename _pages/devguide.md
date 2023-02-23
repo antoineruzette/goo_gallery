@@ -1,11 +1,9 @@
 ---
 title: Developer's Guide
-subtitle: Goo is an open and collaborative project started in Sean Megason's group at Harvard University. We welcome everyone who is interested in enhancing 3D models of biological cells with Blender!
+subtitle: Goo is an open and collaborative project started in Sean Megason's group at Harvard University. We welcome everyone who is interested in enhancing 3D models of biological cells with Blender. The developer’s guide is to help contributors willing to start working and contributing on Goo. If you are interested in join, please contact Sean Megason on his email address sean_megason@hms.harvard.edu.
 description: ''
 featured_image: ''
 ---
-
-The developer’s guide is to help contributors willing to start working and contributing on Goo. If you are interested in join, please contact Sean Megason on his email address. sean.megason(AT)hms.harvard.edu.
 
 <h3>Git/Github</h3>
 The first thing you need to do is to fork the Goo repository and then clone the forked repository into your local machine. This will give you the freedom to test and make changes to the project without affecting the original repository.
