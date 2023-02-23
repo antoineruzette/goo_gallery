@@ -30,6 +30,16 @@ featured_image: ''
     goo.material("red", 0.1, 0, 0)
 </blockquote-medium>
 2. Declare your first cells: <br>
+<<<<<<< HEAD
+<pre>
+    <code class="language-python">             
+                    # create first cell
+                    goo.make_cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_first_collection")
+                    # create second cell
+                    goo.make_cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_first_collection")
+    </code> 
+</pre>
+=======
     <pre>
         <code class="language-python">             
             # create first cell
@@ -38,11 +48,16 @@ featured_image: ''
             goo.cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_cell_collection")
         </code> 
     </pre>
+>>>>>>> c5d254c95775683bb2991deeebc850157fa93ad8
 3. Create your first scene by clicking the play button in the scripting tab of Blender. 
 4. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
 
 <b>Add cell adhesion</b>
 
+<<<<<<< HEAD
+The current scene is static as no interactions between the cells that have been declared. 
+1.
+=======
 The current scene is static as no interactions between cells have been declared. 
 1. Declare your first adhesion forces. 
     <pre>
@@ -56,10 +71,11 @@ The current scene is static as no interactions between cells have been declared.
         </code> 
     </pre>
 2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
+>>>>>>> c5d254c95775683bb2991deeebc850157fa93ad8
 
 <b>Biological features supported in Goo</b>
 
-<h4>1. Biological cells </h4> <br>
+1. Biological cells <br>
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
 <h4>2. Cell adhesion </h4><br>
 Adhesion forces are mimmicked by Blender's built-in force fields. In Goo, they emanate from the cell's surface, are local and centered on the cell's center of mass. 
@@ -69,3 +85,4 @@ Goo cells grow at a user-specified rate so that they volume isotropically increa
 Goo implements cell undirected motility as a uniform random walk. 
 <h4>5. Cell division</h4> <br>
 Goo's model for cell division follows Hertwig's rule, stating that cells divide along their long axis. Therefore, the division plane is described as the plane orthogonal to the long axis and that passes by the cell's center of mass. 
+>>>>>>> c5d254c95775683bb2991deeebc850157fa93ad8
