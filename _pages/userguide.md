@@ -30,16 +30,6 @@ featured_image: ''
     goo.material("red", 0.1, 0, 0)
 </blockquote-medium>
 2. Declare your first cells: <br>
-<<<<<<< HEAD
-<pre>
-    <code class="language-python">             
-                    # create first cell
-                    goo.make_cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_first_collection")
-                    # create second cell
-                    goo.make_cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_first_collection")
-    </code> 
-</pre>
-=======
     <pre>
         <code class="language-python">             
             # create first cell
@@ -48,16 +38,11 @@ featured_image: ''
             goo.cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_cell_collection")
         </code> 
     </pre>
->>>>>>> c5d254c95775683bb2991deeebc850157fa93ad8
 3. Create your first scene by clicking the play button in the scripting tab of Blender. 
 4. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
 
 <b>Add cell adhesion</b>
 
-<<<<<<< HEAD
-The current scene is static as no interactions between the cells that have been declared. 
-1.
-=======
 The current scene is static as no interactions between cells have been declared. 
 1. Declare your first adhesion forces. 
     <pre>
@@ -71,7 +56,6 @@ The current scene is static as no interactions between cells have been declared.
         </code> 
     </pre>
 2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
->>>>>>> c5d254c95775683bb2991deeebc850157fa93ad8
 
 <b>Biological features supported in Goo</b>
 
