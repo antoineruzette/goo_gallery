@@ -2,7 +2,7 @@
 title: 'Early embryo: 4 cells'
 subtitle: 'Early emrbyogenesis'
 icon: 'fas fa-play fa-3x'
-date: 2023-01-30 00:00:00
+date: 2023-02-23 00:00:00
 description: Blender Render
 featured_image: '/images/projects/blender/featured/4cellstage.jpg'
 published: true
