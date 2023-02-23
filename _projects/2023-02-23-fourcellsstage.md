@@ -1,0 +1,24 @@
+---
+title: 'Early embryo: 4 cells'
+subtitle: 'Early emrbyogenesis'
+icon: 'fas fa-play fa-3x'
+date: 2023-01-30 00:00:00
+description: Blender Render
+featured_image: '/images/projects/blender/featured/4cellstage.jpg'
+published: true
+
+---
+
+<video style="width:100vh; height:60vh;" controls loop autoplay>
+    <source src="{{site.baseurl}}/images/projects/blender/full_size/4cellstage.mp4" type="video/mp4">
+</video>
+
+---
+
+### Project Information
+
+**Software:** Blender v3.3.0
+
+**Type:** Simulation, prediction of the preferred organization at the 4-cell stage of the mouse embryonic development.
+
+**Render Engine:** 3D Viewport
