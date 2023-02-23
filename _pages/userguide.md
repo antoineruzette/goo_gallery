@@ -59,7 +59,7 @@ The current scene is static as no interactions between cells have been declared.
 
 <b>Biological features supported in Goo</b>
 
-1. Biological cells <br>
+<h4>Biological cells </h4><br>
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
 <h4>2. Cell adhesion </h4><br>
 Adhesion forces are mimmicked by Blender's built-in force fields. In Goo, they emanate from the cell's surface, are local and centered on the cell's center of mass. 
