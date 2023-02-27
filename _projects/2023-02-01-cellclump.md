@@ -9,7 +9,7 @@ published: true
 
 ---
 
-<video style="width:100vh; height:60vh;" controls loop autoplay>
+<video style="width:110vh; height:70vh;" controls loop autoplay>
     <source src="{{site.baseurl}}/images/projects/blender/full_size/cellclumping.mp4" type="video/mp4">
 </video>
 
