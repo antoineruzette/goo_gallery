@@ -1,6 +1,6 @@
 ---
-title: 'Early embryo: 4 cells'
-subtitle: 'Early emrbyogenesis'
+title: 'Early mouse embryo: 4 cells'
+subtitle: 'Simulating early embryogenesis'
 icon: 'fas fa-play fa-3x'
 date: 2023-02-23 00:00:00
 description: Blender Render
