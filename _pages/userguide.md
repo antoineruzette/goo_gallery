@@ -13,7 +13,7 @@ featured_image: ''
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 5. Re-start Blender. 
 
-![images\demo\demo-landscape-2.jpg]
+<img src="images\demo\demo-landscape-2.jpg" alt="test">
 
 <b>Your first script</b>
 
