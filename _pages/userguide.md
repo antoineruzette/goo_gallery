@@ -13,8 +13,7 @@ featured_image: ''
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 5. Re-start Blender. 
 
-<img src="images\demo\blender_edit_preferences.jpg" alt="Edit preferences in Blender" style="width:500px;height:600px;">
-<img src="images\demo\blender_add_mesh.jpg" alt="Edit preferences in Blender" style="width:500px;height:600px;">
+<img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:300px;height:400px;"> <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:500px;height:400px;">
 
 <b>Your first script</b>
 
@@ -22,7 +21,6 @@ featured_image: ''
 2. Declare your first cell collection and colors for cell material:
     <pre>
         <code class="language-python">  
-            <hr>
         from goo import goo <br>
         goo.setup_world()
         # create first collection
@@ -30,18 +28,15 @@ featured_image: ''
         # colors 
         goo.material("green", 0, 0.1, 0)
         goo.material("red", 0.1, 0, 0)
-            <hr>
         </code> 
     </pre>
 3. Declare your first cells: <br>
     <pre>
         <code class="language-python">     
-            <hr>        
         # create first cell
         goo.cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_cell_collection")
         # create second cell
         goo.cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_cell_collection")
-            <hr>
         </code> 
     </pre>
 4. Create your first scene by clicking the play button in the scripting tab of Blender. 
@@ -72,7 +67,7 @@ The current scene is static as no interactions between cells have been declared.
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
 <h4>2. Cell adhesion </h4>
 Adhesion forces are mimmicked by Blender's built-in force fields. In Goo, they emanate from the cell's surface, are local and centered on the cell's center of mass. 
-<h4>3. Cell growth </h4><
+<h4>3. Cell growth </h4>
 Goo cells grow at a user-specified rate so that they volume isotropically increase. 
 <h4>4. Cell random motility</h4> 
 Goo implements cell undirected motility as a uniform random walk. 
