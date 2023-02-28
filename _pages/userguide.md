@@ -51,29 +51,30 @@ featured_image: ''
 
 The current scene is static as no interactions between cells have been declared. 
 1. Declare your first adhesion forces. 
+    <hr>
     <pre>
-        <code class="language-python">  
-            <hr>
+        <code class="language-python">
         # create first force collection
         goo.collection("my_force_collection")           
         # declare first force
         goo.adhesion("my_first_force", "my_first_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
         # declare second force
         goo.adhesion("my_second_force", "my_second_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
-            <hr>
         </code> 
-    </pre>
+    </pre> 
+    <hr>
+
 2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
 
 <b>Biological features supported in Goo</b>
 
-<h4>1. Biological cells </h4><br>
+<h4>1. Biological cells </h4>
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
-<h4>2. Cell adhesion </h4><br>
+<h4>2. Cell adhesion </h4>
 Adhesion forces are mimmicked by Blender's built-in force fields. In Goo, they emanate from the cell's surface, are local and centered on the cell's center of mass. 
-<h4>3. Cell growth </h4><br>
+<h4>3. Cell growth </h4><
 Goo cells grow at a user-specified rate so that they volume isotropically increase. 
-<h4>4. Cell random motility</h4> <br>
+<h4>4. Cell random motility</h4> 
 Goo implements cell undirected motility as a uniform random walk. 
-<h4>5. Cell division</h4> <br>
+<h4>5. Cell division</h4> 
 Goo's model for cell division follows Hertwig's rule, stating that cells divide along their long axis. Therefore, the division plane is described as the plane orthogonal to the long axis and that passes by the cell's center of mass. 
