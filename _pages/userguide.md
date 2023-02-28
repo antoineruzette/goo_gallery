@@ -13,14 +13,16 @@ featured_image: ''
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 5. Re-start Blender. 
 
-<img src="images\demo\demo-landscape-2.jpg" alt="test">
+<img src="images\demo\blender_edit_preferences.jpg" alt="Edit preferences in Blender" style="width:500px;height:600px;">
+<img src="images\demo\blender_add_mesh.jpg" alt="Edit preferences in Blender" style="width:500px;height:600px;">
 
 <b>Your first script</b>
 
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Declare your first cell collection and colors for cell material:
     <pre>
-        <code class="language-python">      
+        <code class="language-python">  
+            <hr>
         from goo import goo <br>
         goo.setup_world()
         # create first collection
@@ -28,15 +30,18 @@ featured_image: ''
         # colors 
         goo.material("green", 0, 0.1, 0)
         goo.material("red", 0.1, 0, 0)
+            <hr>
         </code> 
     </pre>
 3. Declare your first cells: <br>
     <pre>
-        <code class="language-python">             
+        <code class="language-python">     
+            <hr>        
         # create first cell
         goo.cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_cell_collection")
         # create second cell
         goo.cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_cell_collection")
+            <hr>
         </code> 
     </pre>
 4. Create your first scene by clicking the play button in the scripting tab of Blender. 
@@ -48,12 +53,14 @@ The current scene is static as no interactions between cells have been declared.
 1. Declare your first adhesion forces. 
     <pre>
         <code class="language-python">  
+            <hr>
         # create first force collection
         goo.collection("my_force_collection")           
         # declare first force
         goo.adhesion("my_first_force", "my_first_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
         # declare second force
         goo.adhesion("my_second_force", "my_second_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
+            <hr>
         </code> 
     </pre>
 2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
