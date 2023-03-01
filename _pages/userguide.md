@@ -15,8 +15,7 @@ featured_image: ''
 
 <div class="image-container">
   <figure>
-  <img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:25%">
-  <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:45%">
+  <img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:25%"> <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:45%">
   <figcaption>This is your image caption</figcaption>
   </figure>
 </div>
