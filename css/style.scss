@@ -146,7 +146,7 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
-    width: 33.33%;
+    width: 50%;
     padding: 5px;
   }
   
@@ -156,7 +156,6 @@ $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
     clear: both;
     display: table;
   }
-
 
 // - - - - - - - - - - Global styles
 
