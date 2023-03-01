@@ -13,14 +13,9 @@ featured_image: ''
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 5. Re-start Blender. 
 
-
-<div class="row">
-  <div class="column">
-    <img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:40%">
-  </div>
-  <div class="column">
-    <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:40%">
-  </div>
+<div class="image-container">
+  <img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:35%">
+  <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:55%">
 </div>
 
 <b>Your first script</b>
