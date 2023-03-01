@@ -16,10 +16,10 @@ featured_image: ''
 
 <div class="row">
   <div class="column">
-    <img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:10%">
+    <img src="images\demo\blender_edit_preferences.jpg" alt="" style="width:40%">
   </div>
   <div class="column">
-    <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:10%">
+    <img src="images\demo\blender_add_mesh.jpg" alt="" style="width:40%">
   </div>
 </div>
 
