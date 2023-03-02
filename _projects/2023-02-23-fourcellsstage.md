@@ -19,6 +19,6 @@ published: true
 
 **Software:** Blender v3.3.0
 
-**Type:** Simulation, prediction of the preferred organization at the 4-cell stage of the mouse embryonic development.
+**Type:** Simulation, prediction of a 4-cell tetrahedron embryo, as observed in the mouse early embryogenesis.
 
 **Render Engine:** 3D Viewport
