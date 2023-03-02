@@ -1,8 +1,8 @@
 ---
-title: 'Cell clump'
-subtitle: '16 cells clumping under adhesion forces'
+title: 'Early C. elegans embryo: 4-cell stage'
+subtitle: 'Simulating early embryogenesis'
 icon: 'fas fa-play fa-3x'
-date: 2023-01-30 00:00:00
+date: 2023-03-02 00:00:00
 description: Blender Render
 featured_image: '/images/projects/blender/featured/elegans4cells.jpg'
 published: true
