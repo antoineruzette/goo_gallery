@@ -19,6 +19,6 @@ published: true
 
 **Software:** Blender v3.3.0
 
-**Type:** Simulation, prediction of a 4-cell tetrahedron embryo, as observed in the mouse early embryogenesis.
+**Type:** Simulation, prediction of a 4-cell tetrahedron embryo, as observed in the <i>mouse<i> early embryogenesis.
 
 **Render Engine:** 3D Viewport
