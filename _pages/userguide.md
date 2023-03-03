@@ -51,7 +51,7 @@ The current scene is static as no interactions between cells have been declared.
 1. Declare your first adhesion forces. 
     <hr>
     <pre>
-        <code class="language-python">
+        <code class="python">
         # create first force collection
         goo.collection("my_force_collection")           
         # declare first force
