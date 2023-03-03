@@ -6,7 +6,7 @@ basic_settings:
 
 header_settings:
   logo_image: /images/logo/logo_goo.png
-  logo_width: 120
+  logo_width: 140
 
 menu_settings:
   menu_items:
@@ -25,7 +25,7 @@ menu_settings:
 
 grid_settings:
   overlay_opacity: 0.8
-  grid_spacing: 10
+  grid_spacing: 12
 
 contact_settings:
   form_action: ''
