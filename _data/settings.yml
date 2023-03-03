@@ -2,10 +2,10 @@ basic_settings:
   site_title: Goo
   site_owner: Antoine A. Ruzette, Sean Megason
   site_tagline: The Blender extension for simulating biological cells in 3D.
-  favicon_image: /images/logo/cellclumping.png
+  favicon_image: /images/logo/logo_goo.png
 
 header_settings:
-  logo_image: /images/logo/cellclumping.png
+  logo_image: /images/logo/logo_goo.png
   logo_width: 120
 
 menu_settings:

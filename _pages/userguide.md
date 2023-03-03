@@ -58,7 +58,8 @@ goo.make_cell(name = "my_second_cell",
 <b>Add cell adhesion</b>
 
 The current scene is static as no interactions between cells have been declared. 
-1. Declare the corresponding adhesion forces: 
+
+Declare the corresponding adhesion forces: 
 
 ```python
 # create first force collection
@@ -96,7 +97,8 @@ bpy.app.handlers.frame_change_post.clear()
 bpy.app.handlers.frame_change_post.append(handlers.adhesion_handler)
 ```
 
-2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
+Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
+
 
 <b>Biological features supported in Goo</b>
 
