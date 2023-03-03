@@ -22,41 +22,63 @@ featured_image: ''
 
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Declare your first cell collection and colors for cell material:
-    <pre>
-        <code class="language-python">  
-        from goo import goo <br>
-        goo.setup_world()
-        # create first collection
-        goo.collection("my_cell_collection") <br>
-        # colors 
-        goo.material("green", 0, 0.1, 0)
-        goo.material("red", 0.1, 0, 0)
-        </code> 
-    </pre>
-3. Declare your first cells: <br>
-    <pre>
-        <code class="language-python">     
-        # create first cell
-        goo.cell("my_first_cell", loc = (0,0,0), material = "green", collection = "my_cell_collection")
-        # create second cell
-        goo.cell("my_second_cell", loc = (0,2,0), material = "red", collection = "my_cell_collection")
-        </code> 
-    </pre>
+
+```python
+from goo import goo
+import bpy
+goo.setup_world() 
+
+# colors 
+goo.add_material(name = "green", r = 0, g = 0.1, b = 0)
+goo.add_material(name = "red", r = 0.1, g = 0, b = 0)
+# create first collection
+goo.make_collection(name = "my_cell_collection")
+```
+
+3. Declare your first two cells, one in green and the other in red: <br>
+
+```python    
+# create first cell
+goo.make_cell(name = "my_first_cell", loc = (0,0,0), \
+                material = "green", collection = "my_cell_collection")
+# create second cell
+goo.make_cell(name = "my_second_cell", loc = (0,2,0), \
+                material = "red", collection = "my_cell_collection")
+```
+
 4. Create your first scene by clicking the play button in the scripting tab of Blender. 
 5. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
 
 <b>Add cell adhesion</b>
 
 The current scene is static as no interactions between cells have been declared. 
-1. Declare your first adhesion forces. 
+1. Declare the corresponding adhesion forces: 
 
 ```python
-        # create first force collection
-        goo.collection("my_force_collection")           
-        # declare first force
-        goo.adhesion("my_first_force", "my_first_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
-        # declare second force
-        goo.adhesion("my_second_force", "my_second_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
+# create first force collection
+goo.make_collection(name = "my_force_collection")           
+# declare first force
+goo.make_force(force_name = "my_first_force", cell_name = "my_first_cell", \ 
+                strength = -1000, falloff = 1, collection = "my_force_collection")
+# declare second force
+goo.make_force(force_name = "my_second_force", cell_name = "my_second_cell", \
+                strength = -1000, falloff = 1, collection = "my_force_collection")
+```
+
+<b>Add simulation details</b>
+
+```python
+# set simulation parameters for cell stiffness
+goo.simulation_stifness(tension = 1, compression = 1, shearing = 1, bending = 1)
+
+# instantiate handlers
+handlers = goo.handler_class()
+# add forces to simulate
+handlers.forces = [fA1, fA2]
+# clear the frame
+bpy.app.handlers.frame_change_post.clear()
+# add adhesion handlers to the simulation
+bpy.app.handlers.frame_change_post.append(handlers.adhesion_handler)
 ```
 
 2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
