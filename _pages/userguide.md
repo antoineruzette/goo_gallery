@@ -29,8 +29,10 @@ import bpy
 goo.setup_world() 
 
 # colors 
-goo.add_material(name = "green", r = 0, g = 0.1, b = 0)
-goo.add_material(name = "red", r = 0.1, g = 0, b = 0)
+goo.add_material(name = "green", 
+                    r = 0, g = 0.1, b = 0)
+goo.add_material(name = "red", 
+                    r = 0.1, g = 0, b = 0)
 # create first collection
 goo.make_collection(name = "my_cell_collection")
 ```
@@ -39,11 +41,15 @@ goo.make_collection(name = "my_cell_collection")
 
 ```python    
 # create first cell
-goo.make_cell(name = "my_first_cell", loc = (0,0,0), \
-                material = "green", collection = "my_cell_collection")
+goo.make_cell(name = "my_first_cell", 
+                loc = (0,0,0), 
+                material = "green", 
+                collection = "my_cell_collection")
 # create second cell
-goo.make_cell(name = "my_second_cell", loc = (0,2,0), \
-                material = "red", collection = "my_cell_collection")
+goo.make_cell(name = "my_second_cell", 
+                loc = (0,2,0), 
+                material = "red", 
+                collection = "my_cell_collection")
 ```
 
 4. Create your first scene by clicking the play button in the scripting tab of Blender. 
@@ -58,18 +64,27 @@ The current scene is static as no interactions between cells have been declared.
 # create first force collection
 goo.make_collection(name = "my_force_collection")           
 # declare first force
-goo.make_force(force_name = "my_first_force", cell_name = "my_first_cell", \ 
-                strength = -1000, falloff = 1, collection = "my_force_collection")
+goo.make_force(force_name = "my_first_force", 
+                cell_name = "my_first_cell", 
+                strength = -1000, 
+                falloff = 1, 
+                collection = "my_force_collection")
 # declare second force
-goo.make_force(force_name = "my_second_force", cell_name = "my_second_cell", \
-                strength = -1000, falloff = 1, collection = "my_force_collection")
+goo.make_force(force_name = "my_second_force", 
+                cell_name = "my_second_cell",
+                strength = -1000, 
+                falloff = 1, 
+                collection = "my_force_collection")
 ```
 
 <b>Add simulation details</b>
 
 ```python
 # set simulation parameters for cell stiffness
-goo.simulation_stifness(tension = 1, compression = 1, shearing = 1, bending = 1)
+goo.simulation_stifness(tension = 1, 
+                        compression = 1, 
+                        shearing = 1, 
+                        bending = 1)
 
 # instantiate handlers
 handlers = goo.handler_class()
