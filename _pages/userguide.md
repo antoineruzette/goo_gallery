@@ -49,18 +49,15 @@ featured_image: ''
 
 The current scene is static as no interactions between cells have been declared. 
 1. Declare your first adhesion forces. 
-    <hr>
-    <pre>
-        <code class="python">
+
+```python
         # create first force collection
         goo.collection("my_force_collection")           
         # declare first force
         goo.adhesion("my_first_force", "my_first_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
         # declare second force
         goo.adhesion("my_second_force", "my_second_cell", strength = -1000, falloff = 1, collection = "my_force_collection")
-        </code> 
-    </pre> 
-    <hr>
+```
 
 2. Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
 
