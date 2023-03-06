@@ -23,4 +23,4 @@ published: true
 
 **Render Engine:** 3D Viewport
 
-**Simulation parameters:** Adhesion strength: strong (-5000) forces emanating from dark green and no forces (0) emanating from light green. Stiffness of both cells is similar for tension, compression, bending and shearing (1,1,1,1). 
+**Simulation parameters:** Adhesion strength: strong (-5000) forces emanating from dark green cell and no forces (0) emanating from the cell colored in light green. Stiffness of both cells is similar for tension, compression, bending and shearing (1,1,1,1). 
