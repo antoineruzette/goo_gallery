@@ -21,34 +21,30 @@ featured_image: ''
 <b>Your first script</b>
 
 1. Open Blender and its <i>Scripting</i> tab. 
-2. Declare your first cell collection and colors for cell material:
+2. Import goo and Blender's Python API, and set up Blender's scene: 
 
 ```python
 from goo import goo
 import bpy
 goo.setup_world() 
 
-# colors 
-goo.add_material(name = "green", 
-                    r = 0, g = 0.1, b = 0)
-goo.add_material(name = "red", 
-                    r = 0.1, g = 0, b = 0)
-# create first collection
-goo.make_collection(name = "my_cell_collection")
 ```
 
-3. Declare your first two cells, one in green and the other in red: <br>
+3. Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following RGB color model: <br>
 
 ```python    
+# create first collection
+goo.make_collection(name = "my_cell_collection")
+
 # create first cell
 goo.make_cell(name = "my_first_cell", 
                 loc = (0,0,0), 
-                material = "green", 
                 collection = "my_cell_collection")
 # create second cell
 goo.make_cell(name = "my_second_cell", 
                 loc = (0,2,0), 
-                material = "red", 
+                material = ("red", 0.1, 0, 0), # optional, default = ("purple", 0.007, 0.021, 0.3)
+                stiffness = 2, # optional, default = 1
                 collection = "my_cell_collection")
 ```
 
