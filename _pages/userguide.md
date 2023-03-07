@@ -7,7 +7,7 @@ featured_image: ''
 
 <h2>Installation</h2>
 
-1. Install one of the Blender 3 releases from <a href="https://www.blender.org/download/">https://www.blender.org/download/</a>. We recommend using Blender 3.3.
+1. Install one of the Blender 3 releases from <a href="https://www.blender.org/download/">https://www.blender.org/download/</a>. We recommend using Blender 3.3. Remember the folder location of Blender's executable file. 
 2. Clone the <a href="https://github.com/smegason/Goo">Goo repository</a> (or download and unzip). 
 3. In Blender, go to <i>Edit>Preferences</i>. Then, check <i>Add Mesh: Extra Objects</i> in the ‘Add-ons’ tab. 
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
@@ -25,28 +25,29 @@ featured_image: ''
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Import goo and Blender's Python API, and set up Blender's scene: 
 
-  ```python
-  from goo import goo
-  import bpy
-  goo.setup_world() 
-  ```
+    ```python
+    from goo import goo
+    import bpy
+    goo.setup_world() 
+    ```
+    
 3. Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following <a href="https://www.tug.org/pracjourn/2007-4/walden/color.pdf">RGB</a> color model: <br>
 
-  ```python    
-  # create first collection
-  goo.make_collection(name = "my_cell_collection")
+    ```python    
+    # create first collection
+    goo.make_collection(name = "my_cell_collection")
 
-  # create first cell
-  goo.make_cell(name = "my_first_cell", 
-                  loc = (0,0,0), 
-                  collection = "my_cell_collection")
-  # create second cell
-  goo.make_cell(name = "my_second_cell", 
-                  loc = (0,2,0), 
-                  material = ("red", 0.1, 0, 0), # optional, default = ("purple", 0.007, 0.021, 0.3)
-                  stiffness = 2, # optional, default = 1
-                  collection = "my_cell_collection")
-  ```
+    # create first cell
+    goo.make_cell(name = "my_first_cell", 
+                    loc = (0,0,0), 
+                    collection = "my_cell_collection")
+    # create second cell
+    goo.make_cell(name = "my_second_cell", 
+                    loc = (0,2,0), 
+                    material = ("red", 0.1, 0, 0), # optional, default = ("purple", 0.007, 0.021, 0.3)
+                    stiffness = 2, # optional, default = 1
+                    collection = "my_cell_collection")
+    ```
 4. Create your first scene by clicking the play button in the scripting tab of Blender. 
 5. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
 
