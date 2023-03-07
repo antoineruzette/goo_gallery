@@ -5,7 +5,7 @@ description: ''
 featured_image: ''
 ---
 
-<b>Installation</b>
+<h2>Installation</h2>
 
 1. Install one of the Blender 3 releases from <a href="https://www.blender.org/download/">https://www.blender.org/download/</a>. We recommend using Blender 3.3.
 2. Clone the <a href="https://github.com/smegason/Goo">Goo repository</a> (or download and unzip). 
@@ -18,7 +18,9 @@ featured_image: ''
   <figcaption>Left: nagivate to the preferences. Right: enable <i> Add Mesh: Extra Objects</i> add-on </figcaption>
 </figure>
 
-<b>Your first script</b>
+<h2>Your first script</h2>
+
+<b>Create cells</b>
 
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Import goo and Blender's Python API, and set up Blender's scene: 
@@ -27,10 +29,9 @@ featured_image: ''
 from goo import goo
 import bpy
 goo.setup_world() 
-
 ```
 
-3. Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following RGB color model: <br>
+3. Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following <a href="https://www.tug.org/pracjourn/2007-4/walden/color.pdf">RGB</a> color model: <br>
 
 ```python    
 # create first collection
@@ -77,26 +78,33 @@ goo.make_force(force_name = "my_second_force",
 <b>Add simulation details</b>
 
 ```python
-# set simulation parameters for cell stiffness
-goo.simulation_stifness(tension = 1, 
-                        compression = 1, 
-                        shearing = 1, 
-                        bending = 1)
-
 # instantiate handlers
 handlers = goo.handler_class()
-# add forces to simulate
+# add the forces to simulate
 handlers.forces = [fA1, fA2]
 # clear the frame
 bpy.app.handlers.frame_change_post.clear()
-# add adhesion handlers to the simulation
+# simulation will support adhesion
 bpy.app.handlers.frame_change_post.append(handlers.adhesion_handler)
 ```
 
-Execute the script in Blender's scripting tab then start the simulation in the <i>Layout</i> tab. 
+<b>Execute your script</b>
 
+1. Execute your script from Blender's <i>Scripting</i> tab then run the simulation in Blender's <i>Layout</i> tab (shortcut: `spacebar`). 
 
-<b>Biological features supported in Goo</b>
+2. Execute and run your Python/Goo script from a VSCode terminal witht the following command: 
+```bash
+python simulations/blender_background.py
+```
+`blender_background.py` specifies your Blender executable path and the path to your newly created Goo script. 
+```python
+subprocess.run(
+["<your_blender_folder>\\blender.exe",
+"--python",
+"<your_path>\\my_fist_script.py"])
+```
+
+<h2>Biological features supported in Goo</h2>
 
 <h4>1. Biological cells </h4>
 Goo's cells models biological cells as polygon mesh deformable upon collision with other cells. Cells' physical behavior such as stiffness, pressure and adhesion are tunable for biologists to investigate their impact on cell and tissue shapes. Homotypic adhesion is supported in Goo. 
