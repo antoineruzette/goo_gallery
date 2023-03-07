@@ -24,12 +24,14 @@ featured_image: ''
 
 1. Open Blender and its <i>Scripting</i> tab. 
 2. Import goo and Blender's Python API, and set up Blender's scene: 
+
 ```python
 from goo import goo
 import bpy
 goo.setup_world() 
 ```
 3. Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following <a href="https://www.tug.org/pracjourn/2007-4/walden/color.pdf">RGB</a> color model: <br>
+
 ```python    
 # create first collection
 goo.make_collection(name = "my_cell_collection")
@@ -51,6 +53,7 @@ goo.make_cell(name = "my_second_cell",
 <b>Add cell adhesion</b>
 
 Cells do not interact yet thus declare the corresponding adhesion forces: 
+
 ```python
 # create first force collection
 goo.make_collection(name = "my_force_collection")           
@@ -71,6 +74,7 @@ goo.make_force(force_name = "my_second_force",
 <b>Add simulation details</b>
 
 Handlers wrap up functions from Blender and Goo to update Blender's scene when certain critera are met e.g. triggers cell division. 
+
 ```python
 # instantiate handlers
 handlers = goo.handler_class()
@@ -87,6 +91,7 @@ bpy.app.handlers.frame_change_post.append(handlers.adhesion_handler)
 1. Execute your script from Blender's <i>Scripting</i> tab then run the simulation in Blender's <i>Layout</i> tab (shortcut: `spacebar`). 
 
 2. Execute and run your Python/Goo script from a VSCode terminal witht the following command: 
+
 ```python
 python simulations/blender_background.py
 ```
