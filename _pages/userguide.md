@@ -13,7 +13,7 @@ featured_image: ''
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 5. Re-start Blender. 
 
-| ![Edit preferences](images/demo/blender_edit_preferences.jpg) | ![Add mesh](images/demo/blender_add_mesh.jpg) |
+| <img src="images\demo\blender_edit_preferences.jpg" height="150"> | <img src="images\demo\blender_add_mesh.jpg" height="150"> |
 |:---:|:---:|
 | Nagivate to the preferences. | Enable <i> Add Mesh: Extra Objects</i> add-on |
 
