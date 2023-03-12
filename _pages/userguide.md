@@ -22,35 +22,39 @@ featured_image: ''
 
 <b>Create cells</b>
 
-1. Open Blender and its <i>Scripting</i> tab. 
-2. Import goo and Blender's Python API, and set up Blender's scene: 
+<ol>
+  <li>Open Blender and its <i>Scripting</i> tab.</li>
+  <li>Import goo and Blender's Python API, and set up Blender's scene:</li> 
+</ol>
 
 ```python
 from goo import goo
 import bpy
 goo.setup_world() 
 ```
-    
-3. Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following <a href="https://www.tug.org/pracjourn/2007-4/walden/color.pdf">RGB</a> color model: <br>
+<ol start="3">
+  <li>Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following <a href="https://www.tug.org/pracjourn/2007-4/walden/color.pdf">RGB</a> color model:</li>
+</ol>
 
-  ```python    
-  # create first collection
-  goo.make_collection(name = "my_cell_collection")
+```python    
+# create first collection
+goo.make_collection(name = "my_cell_collection")
 
-  # create first cell
-  goo.make_cell(name = "my_first_cell", 
-                  loc = (0,0,0), 
-                  collection = "my_cell_collection")
-  # create second cell
-  goo.make_cell(name = "my_second_cell", 
-                  loc = (0,2,0), 
-                  material = ("red", 0.1, 0, 0), # optional, default = ("purple", 0.007, 0.021, 0.3)
-                  stiffness = 2, # optional, default = 1
-                  collection = "my_cell_collection")  
-  ```
-
-4. Create your first scene by clicking the play button in the scripting tab of Blender. 
-5. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
+# create first cell
+goo.make_cell(name = "my_first_cell", 
+                loc = (0,0,0), 
+                collection = "my_cell_collection")
+# create second cell
+goo.make_cell(name = "my_second_cell", 
+                loc = (0,2,0), 
+                material = ("red", 0.1, 0, 0), # optional, default = ("purple", 0.007, 0.021, 0.3)
+                stiffness = 2, # optional, default = 1
+                collection = "my_cell_collection")  
+```
+<ol start="4">
+  <li>Create your first scene by clicking the play button in the scripting tab of Blender.</li>
+  <li>Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine.</li>
+</ol>
 
 <b>Add cell adhesion</b>
 
@@ -63,35 +67,36 @@ goo.make_collection(name = "my_force_collection")
 goo.make_force(force_name = "my_first_force", 
                 cell_name = "my_first_cell", 
                 strength = -1000, 
-                falloff = 1, 
                 collection = "my_force_collection")
 # declare second force
 goo.make_force(force_name = "my_second_force", 
                 cell_name = "my_second_cell",
                 strength = -1000, 
-                falloff = 1, 
+                falloff = 1, # optional, default = 1
                 collection = "my_force_collection")
 ```
 
-<b>Add simulation details</b>
+<b>Add simulation details and launch</b>
 
 Handlers wrap up functions from Blender and Goo to update Blender's scene when certain critera are met e.g. triggers cell division. 
 
 ```python
-# instantiate handlers
-handlers = goo.handler_class()
-# add the forces to simulate
-handlers.forces = [fA1, fA2]
-# clear the frame
-bpy.app.handlers.frame_change_post.clear()
-# simulation will support adhesion
-bpy.app.handlers.frame_change_post.append(handlers.adhesion_handler)
+# launch simulation
+goo.launch_simulation(start = 1, # optional, default = 1
+                      end = 250, # optional, default = 250
+                      filepath = "path_to_data_file//file.json", # if data = True
+                      adhesion = True; # optional, default = True
+                      growth = False, # optional, default = False
+                      division = False, # optional, default = False
+                      motility = False, # optional, default = False
+                      data = False # optional, default = False
+                      )
 ```
 
 <b>Execute your script</b>
 
 1. Execute your script from Blender's <i>Scripting</i> tab then run the simulation in Blender's <i>Layout</i> tab (shortcut: `spacebar`). 
-2. Execute and run your Python/Goo script from a VSCode terminal witht the following command: 
+2. Execute and run your Python/Goo script from a VSCode terminal with the following command: 
 
 ```python
 python simulations/blender_background.py
