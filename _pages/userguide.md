@@ -4,6 +4,8 @@ subtitle: Goo allows you to create your first 3D digital tissues in just a few c
 description: ''
 featured_image: ''
 ---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
 
 <h2>Installation</h2>
 
@@ -27,11 +29,32 @@ featured_image: ''
   <li>Import goo and Blender's Python API, and set up Blender's scene:</li> 
 </ol>
 
+<pre>
+  <code id="python-code">
+  ```python
+  from goo import goo
+  import bpy
+  goo.setup_world() 
+  ```
+  </code>
+</pre>
+
+<!-- Add the "Copy to clipboard" button -->
+<button class="btn" data-clipboard-target="#python-code">
+  Copy
+</button>
+
+<!-- Initialize ClipboardJS -->
+<script>
+  new ClipboardJS('.btn');
+</script>
+
 ```python
 from goo import goo
 import bpy
 goo.setup_world() 
-```
+```python
+
 <ol start="3">
   <li>Declare your first cell collection, link your first two cells to it. The first cell is displayed in purple, which is the default material and the other in red. Colors are encoded following <a href="https://www.tug.org/pracjourn/2007-4/walden/color.pdf">RGB</a> color model:</li>
 </ol>
