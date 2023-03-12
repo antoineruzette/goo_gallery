@@ -46,8 +46,9 @@ featured_image: ''
                     loc = (0,2,0), 
                     material = ("red", 0.1, 0, 0), # optional, default = ("purple", 0.007, 0.021, 0.3)
                     stiffness = 2, # optional, default = 1
-                    collection = "my_cell_collection")
+                    collection = "my_cell_collection")  
     ```
+
 4. Create your first scene by clicking the play button in the scripting tab of Blender. 
 5. Yay. You have created your first cells in Blender using Goo. Next steps elaborate on how to add adhesion forces and how to animate the scene using Blender's physics engine. 
 
@@ -71,6 +72,7 @@ Cells do not interact yet thus declare the corresponding adhesion forces:
                   falloff = 1, 
                   collection = "my_force_collection")
   ```
+
 <b>Add simulation details</b>
 
 Handlers wrap up functions from Blender and Goo to update Blender's scene when certain critera are met e.g. triggers cell division. 
@@ -85,6 +87,7 @@ Handlers wrap up functions from Blender and Goo to update Blender's scene when c
   # simulation will support adhesion
   bpy.app.handlers.frame_change_post.append(handlers.adhesion_handler)
   ```
+
 <b>Execute your script</b>
 
 1. Execute your script from Blender's <i>Scripting</i> tab then run the simulation in Blender's <i>Layout</i> tab (shortcut: `spacebar`). 
@@ -93,6 +96,7 @@ Handlers wrap up functions from Blender and Goo to update Blender's scene when c
   ```python
   python simulations/blender_background.py
   ```
+  
 `blender_background.py` specifies your Blender executable path and the path to your newly created Goo script. 
 
   ```python
