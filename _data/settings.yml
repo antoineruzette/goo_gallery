@@ -6,7 +6,7 @@ basic_settings:
 
 header_settings:
   logo_image: /images/logo/logo_goo.png
-  logo_width: 80
+  logo_width: 150
 
 menu_settings:
   menu_items:
