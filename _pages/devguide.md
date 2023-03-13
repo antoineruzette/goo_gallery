@@ -10,23 +10,23 @@ The first thing you need to do is to fork the Goo repository and then clone the 
 
 Make sure you have git installed on your local machine. If you do not have it install on your system, refer to this <a href="https://github.com/git-guides/install-git">guide</a>.
 
-<h5>Fork & clone</h5>
+<b>Fork & clone</b>
 If you are new to Git/Github, refer to this <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">guide</a> to learn how to fork and clone a repository from Github: 
 
-<h5>Push</h5>
-Once you make final changes and the scripts run with no issues, you can push them into the main project. Here is an instruction on how to push using git.
+<b>Push</b>
+Once you make final changes and the scripts run with no issues, you can push them into the main project. This <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github">guide</a> instruction on how to add, commit and push using git.
 
 <h3>Blender</h3>
-Blender is an amazing open-source and free 3D computer graphics software, widely used in motion design, graphism, animation, and becoming increasingly popular in sciences. Its Python API comes handy for developers willing to extend Blender's capabilities, much like Goo does. Blender has a huge community and contributors all over the world, which gathers every year at Blender convention and every day on the Blender community discord. 
+Blender is an amazing open-source and free 3D computer graphics software, widely used in motion design, graphism, animation, and becoming increasingly popular in sciences. Its <a href="https://docs.blender.org/api/current/index.html">Python API</a> comes handy for developers willing to extend Blender's capabilities, much like Goo does. Blender has a huge community and contributors all over the world, which gathers every year at Blender convention and every day on the Blender <a href="https://discord.gg/blender">community discord</a>. 
 
-Once you have downloaded and installed Blender, launch Blender and select General to open a new file. The scripting tab allows you to interact with Blender using Python. By clicking scripting, a list of windows will open:
+Once you have <a href="https://www.blender.org/download/">downloaded</a> and installed Blender, launch Blender and select General to open a new file. The scripting tab allows you to interact with Blender using Python. By clicking scripting, a list of windows will open:
 
-1. 3D Viewport allows you to interact with 3D objects.
-2. Python Interactive Console allows you to interact with Blender using Python language.
-3. Info Console Menu or Report console creates a log in Python of the executed actions on Blender. In another words, it translates the clicks you made in Blender into code. This is very useful especially when you try to automate procedures of actions on scripting.
+- ```3D Viewport``` allows you to interact with 3D objects.
+- ```Python Interactive Console``` allows you to interact with Blender using Python language.
+- ```Info Console Menu``` or Report console creates a log in Python of the executed actions on Blender. In another words, it translates the clicks you made in Blender into code. This is very useful especially when you try to automate procedures of actions on scripting.
 
-<h5>Creating Python File</h5>
-You can create a Python file and run it on Blender. Once you are in Scripting tab, click on the + New icon.
+<b>Creating Python File</b>
+You can create a Python file and run it on Blender. Once you are in ```Scripting``` tab, click on the ```+ New``` icon.
 
 Blender Python’s API, named bpy, allows Python and Blender to fit together. To use it, the following package should be imported:
 
