@@ -8,9 +8,9 @@ Goo is a modeling environment for creating physics based simulations of biologic
 
 Goo is built on top of Blender, which is a truly amazing open source computer graphics project empoyering scientists with a user-friendly 3D modeling and simulation environment. Goo provides a library of helper functions in Python for modeling cells with user defined properties that are used inside the scripting environment and GUI of Blender. Physics and rendering are handled by Blender. In combination Goo and Blender allow cell-based simulations to be interacted with via Python scripts and through a GUI.
 
-Goo is open source and currently being developed by Sean Megason's group at Harvard University <a href="http://www.digitalfish.org//">http://www.digitalfish.org/</a>. 
+Goo is open source and currently being developed by Sean Megason's group at Harvard University - <a href="http://www.digitalfish.org//">http://www.digitalfish.org/</a>. 
 
-Our grand Driving Biological Problem is to simulate the first 24 hours of zebrafish development. Our initial efforts are focussed on cleavage stage. We hope that Goo will be useful for simulating other biological tissues for understanding morphogenesis, embryonic development, growth of organoids, tissue engineering, and artificial life.
+Our grand Driving Biological Problem is to simulate the first 24 hours of zebrafish development. Our initial efforts are focussed on cleavage stage. We hope that Goo will be useful for simulating other biological tissues and for understanding morphogenesis, embryonic development, growth of organoids, tissue engineering, and artificial life.
 
 Contributors: Antoine Ruzette<sup>1,2</sup>, Kali Konstantinopoulos<sup>3</sup>, Michael Mitsch<sup>3</sup>, Drew Willis<sup>3</sup>, Daniel Oo<sup>4</sup>, Ahmed Almaghasilah<sup>1,5</sup>, Nenghan Lin<sup>2</sup>, Vanshika Bidhan<sup>2</sup>, Jiangli Gui<sup>2</sup>, Julie De Man<sup>2</sup>, and Sean Megason<sup>1</sup>
 
