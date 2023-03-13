@@ -60,6 +60,7 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: ''
+  website_url: 'http://www.digitalfish.org/'
 
 color_settings:
   background_color: '#ffffff'
