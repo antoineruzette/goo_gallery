@@ -10,10 +10,10 @@ The first thing you need to do is to fork the Goo repository and then clone the 
 
 Make sure you have git installed on your local machine. If you do not have it install on your system, refer to this <a href="https://github.com/git-guides/install-git">guide</a>.
 
-<b>Fork & clone</b>
+<b>Fork & clone</b> <br>
 If you are new to Git/Github, refer to this <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">guide</a> to learn how to fork and clone a repository from Github: 
 
-<b>Push</b>
+<b>Push</b> <br>
 Once you make final changes and the scripts run with no issues, you can push them into the main project. This <a href="https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github">guide</a> instruction on how to add, commit and push using git.
 
 <h3>Blender</h3>

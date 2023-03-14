@@ -12,11 +12,14 @@ featured_image: ''
 3. In Blender, go to <i>Edit>Preferences</i>. Then, check <i>Add Mesh: Extra Objects</i> in the ‘Add-ons’ tab.
 
 | <img src="images\demo\blender_edit_preferences.jpg" height="165"> | <img src="images\demo\blender_add_mesh.jpg" height="150"> |
+| :---: | :---: |
 | Nagivate to the preferences | Enable <i> Add Mesh: Extra Objects</i> add-on | 
+{:.no-border}
 
 4. In <i>Edit>Preferences</i>, go to the File Paths tab and add the <i>/path_to_your_Goo_clone/Goo/scripts/</i> folder to <i>Scripts</i>. 
 
 | <img src="images\demo\blender_add_path.jpg" height="150"> |
+| :---: | 
 | Add Goo scripts to Blender's path |
 
 5. Re-start Blender. 
