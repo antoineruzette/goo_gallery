@@ -47,57 +47,59 @@ The Blender API can used with no installation nor importing into the Python Inte
 
 <b>Viewing Python Error Messages</b>
 
-<h1>PC</h1>: ```Window``` > ```Toggle System Console``` <br>
-<h1>Mac</h1>: ```Finder``` > ```Applications``` > Right-click on ```Blender``` > ```Show Package Content``` > ```Contents``` > ```MacOS``` > Right-click on ```Blender``` > ```Make Alias```. Blender will be launched by double-clicking the Blender alias and any error messages will display on the alias window. You can store the alia in any folder.
+<h5>PC</h5>: ```Window``` > ```Toggle System Console``` <br>
+<h5>Mac</h5>: ```Finder``` > ```Applications``` > Right-click on ```Blender``` > ```Show Package Content``` > ```Contents``` > ```MacOS``` > Right-click on ```Blender``` > ```Make Alias```. Blender will be launched by double-clicking the Blender alias and any error messages will display on the alias window. You can store the alia in any folder.
 
 <b>Blender Python Tutorials</b>
 You can find many free tutorials on YouTube and the Internet. here is a great tutorial, made by Darkfall, on YouTube on how to write a Python script in Blender.
 
 </b>Useful Blender Tips</b>
 
-- <h1>To Display Line Numbers</h1> on a Python file, click ```View``` and mark the checkbox of ```Line Numbers```. ```View``` tab will appear once you create a Python file.
-- <h1>To turn on Highlight Line</h1> at the line currently at, click ```View``` and mark the checkbox of ```Highlight Line```. ```View``` tab will appear once you create a Python file. 
-- <h1>Developer Extras</h1> allows users to examine Python codes on any features or buttons on Blender by right-clicking for example on a Render button and then select Edit Source. To enable this ```Developer Extras```, go to ```Edit``` > ```Preferences``` > ```Interface``` > Check ```Developer Extras```.
-- <h1>Python Tooltips</h1> also allows users to examine the Python codes behind any bulit-in Blender features by just hovering the mouse on top and a pops-up window will appear. To enable ```Python Tooltips```, go to ```Edit``` > ```Preferences``` > ```Interface``` > Check ```Python Tooltips```.
+- <h5>To Display Line Numbers</h5> on a Python file, click ```View``` and mark the checkbox of ```Line Numbers```. ```View``` tab will appear once you create a Python file.
+- <h5>To turn on Highlight Line</h5> at the line currently at, click ```View``` and mark the checkbox of ```Highlight Line```. ```View``` tab will appear once you create a Python file. 
+- <h5>Developer Extras</h5> allows users to examine Python codes on any features or buttons on Blender by right-clicking for example on a Render button and then select Edit Source. To enable this ```Developer Extras```, go to ```Edit``` > ```Preferences``` > ```Interface``` > Check ```Developer Extras```.
+- <h5>Python Tooltips</h5> also allows users to examine the Python codes behind any bulit-in Blender features by just hovering the mouse on top and a pops-up window will appear. To enable ```Python Tooltips```, go to ```Edit``` > ```Preferences``` > ```Interface``` > Check ```Python Tooltips```.
 
 <h3>Visual Studio Code (VSCode)</h3>
 You can use any IDE softwares (Atom, PyCharm, Anaconda,…etc) available on the internet, but from our experience Visual Studio Code has been very smooth and convenient to use.
 
 <b>Getting started with VSCode:</b>
 
-1. <h1>Install Python</h1> - Make sure you have Python already installed in your machine. If you are not sure, you can check by typing ```python –version``` on Terminal/Command Window. If it returns python with some numbers, then you know Python already was installed. But if it does not, you need install <a href="https://www.python.org/downloads/">Python</a>. 
+1. <h5>Install Python</h5> - Make sure you have Python already installed in your machine. If you are not sure, you can check by typing ```python –version``` on Terminal/Command Window. If it returns python with some numbers, then you know Python already was installed. But if it does not, you need install <a href="https://www.python.org/downloads/">Python</a>. 
 
-2. <h1>Install Blender API</h1> - Open Terminal/Command Window and type ```pip install fake-bpy-module-latest```. This command line will install the latest Blender’s version available using Pip package manager. For more info on visit <a href="https://github.com/nutti/fake-bpy-module">Fake Blender Github</a>.
+2. <h5>Install Blender API</h5> - Open Terminal/Command Window and type ```pip install fake-bpy-module-latest```. This command line will install the latest Blender’s version available using Pip package manager. For more info on visit <a href="https://github.com/nutti/fake-bpy-module">Fake Blender Github</a>.
 
-3. <h1>Download and install VSCode software</h1> - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
+3. <h5>Download and install VSCode software</h5> - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
 
-4. <h1>Install Python extension</h1> - open VSCode and go to the extension tab and search for “Python” by Microsoft. The VSCode extensions enhance developer’s experience.
+4. <h5>Install Python extension</h5> - open VSCode and go to the extension tab and search for “Python” by Microsoft. The VSCode extensions enhance developer’s experience.
 
-5. <h1>Open Goo folder in VSCode</h1> - ```File``` > ```Open Folder```. See ```Git/GitHub``` section on how to clone Goo on your local machine if you have not done it yet.
+5. <h5>Open Goo folder in VSCode</h5> - ```File``` > ```Open Folder```. See ```Git/GitHub``` section on how to clone Goo on your local machine if you have not done it yet.
 
-6. <h1>Open Terminal</h1> - if needed, you can open Terminal in VSCode. Go to ```Terminal``` tab and then select ```New Terminal```.
+6. <h5>Open Terminal</h5> - if needed, you can open Terminal in VSCode. Go to ```Terminal``` tab and then select ```New Terminal```.
 
-Enable and Select Linter - Before you start working on Goo, you need to enable Linter which advise you about the code quality. We are following fake8 style. To enable linter in VSCode, hit ctl + shift + P and type “Python: Enable/Disable Linting”. Click on it and enable it. Now you need to select the code style. Again click ctl + shift + P and type “Python: Select Linter” and then select fake8
+7. <h5>Optional: Enable and Select Linter</h5> - Before you start working on Goo, you need to enable Linter which advise you about the code quality. We are following flake8 style. To enable linter in VSCode, hit ```ctl + shift + P``` and type ```Python: Enable/Disable Linting```. Click on it and enable it. Now you need to select the code style. Again click ```ctl + shift + P``` and type ```Python: Select Linter``` and then select ```flake8```. 
 
 We have already shown how to run Python codes in Blender (see Creating Python file above). In this section, we will show you how to run Python scripts on VSCode written exclusively for Blender.
 
-There are two ways you can develop/execute your Python codes in VSCode.
+<b>Recommended: developing Python scripts in VSCode and executing in Blender</b>
 
-A) Developing/Executing Python codes in VSCode
-Install Blender extenion: same as before open up VSCode and got to extension and search for “Blender Development” by Jacques Lucke
+1. <h5>Save changes in VSCode:</h5> Save the changes you made in goo.py or any other scripts in VSCode. 
 
-Python file: Create a Python file in VSCode.
+2. <h5>Create a new script:</h5> In Blender, create a new Python script.
 
-Link Blender executable file: Click ctl + shift + p , select Blender: Start, and then select the executable Blender (you can find it in Blender folder). In Mac: Finder > Application > right-click on Blender and choose “Show Package Content” > Contents > MacOS. In PC: find the path where blender.exe exists in Blender folder. Once you link the executable, Blender will launch. Select General to start from scratch.
+3. <h5>Reload:</h5> To use the attributs/methods of the scripts you created or modified in Blender, you will need to add the following at the top of the script:
 
-Run Python script: if you want to run your script, hit ctl + shift + p and select Blender: Run Script. Now, you can see the results in Blender.
-
-B) Developing a Python script in VSCode and executing in Blender
-Save changes in VSCode: Save the changes you made in goo.py or any other scripts in VSCode
-
-Create a new script: In Blender, create a new Python script
-
-Reload: To use the attributs/methods of the scripts you created or modified in Blender, you will need to add the following at the top of the script:
-
+```python
 from importlib import reload
 reload(goo)
+```
+
+<b>Alternative: developing/Executing Python codes in VSCode</b>
+
+1. <h5>Install Blender extenion:</h5> same as before open up VSCode and got to extension and search for ```Blender Development``` by Jacques Lucke. 
+
+2. <h5>Python file:</h5> Create a Python file in VSCode.
+
+3. <h5>Link Blender executable file:</h5> Click ```Ctl + Shift + P``` , select ```Blender: Start```, and then select the executable Blender (you can find it in Blender folder). With MacOS: ```Finder``` > ```Application``` > Right-click on ```Blender``` and choose ```Show Package Content``` > ```Contents``` > ```MacOS```. With Windows: find the path where ```blender.exe``` exists in Blender folder. Once you link the executable, Blender will launch. Select General to start from scratch.
+
+4. Run Python script: if you want to run your script, hit ```Ctl + shift + P``` and select ```Blender: Run Script```. Now, you can see the results in Blender.
