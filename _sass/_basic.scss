@@ -165,7 +165,7 @@ blockquote {
 	line-height: $blockquote-lineheight;
 
 	@include mq(tabletp) {
-		padding: 15px 30px;
+		padding: 5px 30px;
 		font-size: $blockquote-medium;
 	}
 
@@ -278,7 +278,7 @@ a {
 }
 
 hr {
-	margin: 40px 0;
+	margin: 20px 0;
 	border: 0;
 	height: 2px;
 	background: $border-color;
