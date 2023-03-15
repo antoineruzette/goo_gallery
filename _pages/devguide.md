@@ -54,7 +54,7 @@ The Blender API can used with no installation nor importing into the Python Inte
 
 You can find many free tutorials on YouTube and the Internet. here is a great tutorial, made by Darkfall, on YouTube on how to write a Python script in Blender.
 
-</b>Useful Blender Tips</b>
+<b>Useful Blender Tips</b>
 
 - To Display Line Numbers on a Python file, click ```View``` and mark the checkbox of ```Line Numbers```. ```View``` tab will appear once you create a Python file.
 - To turn on Highlight Line at the line currently at, click ```View``` and mark the checkbox of ```Highlight Line```. ```View``` tab will appear once you create a Python file. 
@@ -66,7 +66,7 @@ You can use any IDE softwares (Atom, PyCharm, Anaconda,…etc) available on the 
 
 <b>Getting started with VSCode:</b>
 
-1. Install Python - Make sure you have Python already installed in your machine. If you are not sure, you can check by typing ```python –version``` on Terminal/Command Window. If it returns python with some numbers, then you know Python already was installed. But if it does not, you need install <a href="https://www.python.org/downloads/">Python</a>. 
+1. <u>Install Python</u> - Make sure you have Python already installed in your machine. If you are not sure, you can check by typing ```python –version``` on Terminal/Command Window. If it returns python with some numbers, then you know Python already was installed. But if it does not, you need install <a href="https://www.python.org/downloads/">Python</a>. 
 2. Install Blender API - Open Terminal/Command Window and type ```pip install fake-bpy-module-latest```. This command line will install the latest Blender’s version available using Pip package manager. For more info on visit <a href="https://github.com/nutti/fake-bpy-module">Fake Blender Github</a>.
 3. Download and install VSCode software - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
 4. Install Python extension - open VSCode and go to the extension tab and search for “Python” by Microsoft. The VSCode extensions enhance developer’s experience.
@@ -89,10 +89,7 @@ reload(goo)
 
 <b>Alternative: developing/Executing Python codes in VSCode</b>
 
-1. <h5>Install Blender extenion:</h5> same as before open up VSCode and got to extension and search for ```Blender Development``` by Jacques Lucke. 
-
-2. <h5>Python file:</h5> Create a Python file in VSCode.
-
-3. <h5>Link Blender executable file:</h5> Click ```Ctl + Shift + P``` , select ```Blender: Start```, and then select the executable Blender (you can find it in Blender folder). With MacOS: ```Finder``` > ```Application``` > Right-click on ```Blender``` and choose ```Show Package Content``` > ```Contents``` > ```MacOS```. With Windows: find the path where ```blender.exe``` exists in Blender folder. Once you link the executable, Blender will launch. Select General to start from scratch.
-
+1. Install Blender extenion: same as before open up VSCode and got to extension and search for ```Blender Development``` by Jacques Lucke. 
+2. Python file: Create a Python file in VSCode.
+3. Link Blender executable file: Click ```Ctl + Shift + P``` , select ```Blender: Start```, and then select the executable Blender (you can find it in Blender folder). With MacOS: ```Finder``` > ```Application``` > Right-click on ```Blender``` and choose ```Show Package Content``` > ```Contents``` > ```MacOS```. With Windows: find the path where ```blender.exe``` exists in Blender folder. Once you link the executable, Blender will launch. Select General to start from scratch.
 4. Run Python script: if you want to run your script, hit ```Ctl + shift + P``` and select ```Blender: Run Script```. Now, you can see the results in Blender.
