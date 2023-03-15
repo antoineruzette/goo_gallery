@@ -344,13 +344,13 @@ body.loading {
 .page__content {
 	float: left;
 	clear: both;
-	width: 100%;
+	width: 120%;
 }
 
 .page {
 
 	@include mq(tabletl) {
-		padding-left: 10%;
+		padding-left: 30%;
 	}
 }
 
