@@ -344,7 +344,7 @@ body.loading {
 .page__content {
 	float: left;
 	clear: both;
-	width: 120%;
+	width: 100%;
 }
 
 .page {
@@ -377,7 +377,7 @@ section {
 .wrap {
 	position: relative;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 10px;
 
 	@include mq(tabletp) {
 		padding: 0 40px;
